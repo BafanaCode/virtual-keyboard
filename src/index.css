@@ -1,0 +1,150 @@
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 40px; 
+  color: white; 
+  background: #000; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 0.7);
+}
+
+.keyboardContainer {
+  display: flex;
+  justify-content: center;
+  width: 1024px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #111, #333);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.simple-keyboard-main.simple-keyboard {
+  width: 640px;
+  min-width: 640px;
+  background: none;
+}
+
+.simple-keyboard-main.simple-keyboard .hg-row:first-child {
+  margin-bottom: 15px;
+}
+
+.simple-keyboard-arrows.simple-keyboard {
+  align-self: flex-end;
+  background: none;
+}
+
+.simple-keyboard .hg-button {
+  background: linear-gradient(135deg, #000, #111);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 0, 150, 0.8), 0 0 15px rgba(0, 150, 255, 0.8),
+    0 0 15px rgba(0, 255, 0, 0.8);
+  color: white;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.simple-keyboard .hg-button {
+  box-shadow: 0 0 15px rgba(255, 0, 150, 1), 0 0 15px rgba(0, 150, 255, 1),
+    0 0 15px rgba(0, 255, 0, 1);
+}
+
+.simple-keyboard .hg-button:hover,
+.simple-keyboard .hg-button.hg-selectedButton {
+  background: linear-gradient(135deg, #000, #444);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 1), 0 0 10px rgba(0, 150, 255, 1);
+  color: #00ffff;
+}
+
+.hg-button.hg-functionBtn.hg-button-space,
+.hg-button.hg-standardBtn.hg-button-enter {
+  background: linear-gradient(135deg, #000, #222);
+  width: 350px;
+  box-shadow: 0 0 30px rgba(0, 150, 255, 1);
+}
+
+.simple-keyboard .hg-button.emptySpace {
+  pointer-events: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.simple-keyboard-arrows .hg-button {
+  width: 50px;
+  flex-grow: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.controlArrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.numPad {
+  display: flex;
+  align-items: flex-end;
+}
+
+.simple-keyboard-numpad.simple-keyboard .hg-button {
+  width: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #111, #222);
+}
+
+.simple-keyboard-numpadEnd.simple-keyboard .hg-button {
+  height: 85px;
+  background: linear-gradient(135deg, #111, #222);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+  color: #00ffff;
+}
+
+.simple-keyboard .hg-button:hover {
+  background: linear-gradient(135deg, #444, #555);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 15px rgba(255, 0, 0, 1);
+}
+
+.simple-keyboard.hg-theme-default {
+  animation: rgbFlow 5s infinite linear;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rgbFlow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
