@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# ⌨️ Virtual Keyboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-## Available Scripts
+A browser-based virtual keyboard built with React. Users can interact with an on-screen keyboard to type characters, which are reflected in a live text display — no physical keyboard required.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📋 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [What I Learned](#what-i-learned)
+- [Future Improvements](#future-improvements)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## About the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was built to explore React component design and event handling. The virtual keyboard renders clickable keys that update a live text output area when pressed. It demonstrates how to manage UI state reactively in response to user interactions — a core pattern in React development.
 
-### `npm run build`
+> 🎯 A focused React exercise in component composition, state management, and DOM event handling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🖱️ Clickable on-screen keys that output typed characters
+- 📝 Live text display that updates in real time
+- ⌫ Backspace/delete functionality
+- 📱 Responsive layout that works across screen sizes
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Category  | Technology              |
+|-----------|-------------------------|
+| Framework | React (Create React App)|
+| Language  | JavaScript (ES6+)       |
+| Styling   | CSS3                    |
+| Markup    | HTML5                   |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- npm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/BafanaCode/virtual-keyboard.git
+   cd virtual-keyboard
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📚 What I Learned
 
-### Advanced Configuration
+- Building reusable React components for UI elements (individual keys, keyboard rows)
+- Managing text state with `useState` and updating it through click events
+- Thinking in components — breaking a UI into logical, composable pieces
+- Handling special keys (Space, Backspace) with conditional logic
+- Applying CSS to create a keyboard-like layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🔮 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [ ] Add Shift / Caps Lock support for uppercase letters
+- [ ] Include number row and symbol keys
+- [ ] Sync with physical keyboard input events
+- [ ] Add a theme toggle (light/dark mode)
+- [ ] Support multiple keyboard layouts (e.g. QWERTY, AZERTY)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Author
+
+**Luyanda Nhlapho**
+📍 Kimberley, South Africa
+🎓 Advanced Diploma in ICT – Sol Plaatje University
+
+[![GitHub](https://img.shields.io/badge/GitHub-BafanaCode-181717?style=flat-square&logo=github)](https://github.com/BafanaCode)
